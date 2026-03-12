@@ -1,3 +1,46 @@
+/*
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'core/theme/app_theme.dart';
+import 'features/home/presentation/pages/home_page.dart';
+import 'features/home/presentation/providers/home_provider.dart';
+import 'features/map/presentation/pages/map_page.dart';
+import 'features/map/presentation/providers/map_provider.dart';
+import 'features/navigation/presentation/pages/navigation_page.dart';
+import 'features/welcome/presentation/pages/welcome_page.dart';
+
+void main() {
+  runApp(const SinportApp());
+}
+
+class SinportApp extends StatelessWidget {
+  const SinportApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<HomeProvider>(create: (_) => HomeProvider()),
+        ChangeNotifierProvider<MapProvider>(create: (_) => MapProvider()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Sinport UI',
+        theme: AppTheme.darkTheme,
+        initialRoute: WelcomePage.routeName,
+        routes: {
+          WelcomePage.routeName: (_) => const WelcomePage(),
+          HomePage.routeName: (_) => const HomePage(),
+          MapPage.routeName: (_) => const MapPage(),
+          NavigationPage.routeName: (_) => const NavigationPage(),
+        },
+      ),
+    );
+  }
+}
+ */
+
 import 'package:flutter/material.dart';
 
 void main() {
